@@ -1,0 +1,282 @@
+## Parser?
+
+[Parser](https://en.wikipedia.org/wiki/Parsing) makes array of tokens into AST.
+
+## AST?
+
+[AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)(abbreviation of abstract syntax tree) is a tree representation of the abstract syntactic structure of source code written in a programming language.
+
+...but it is just a extensional definition.
+
+AST is a tree. But its node has information of the source code.
+
+For example, if you have a source code like this:
+
+```js
+const a = 1;
+```
+
+then, javascript parser will make AST like this:
+
+```js
+{
+  type: 'Program',
+  body: [
+    {
+      type: 'VariableDeclaration',
+      declarations: [
+        {
+          type: 'VariableDeclarator',
+          id: {
+            type: 'Identifier',
+            name: 'a',
+          },
+          init: {
+            type: 'Literal',
+            value: 1,
+            raw: '1',
+          },
+        },
+      ],
+      kind: 'const',
+    },
+  ],
+  sourceType: 'module',
+}
+```
+
+Each object has information of the part of source code.
+
+But.. it is too complex to make AST. So, we need a tool to make AST.
+
+`infinite` provides a easy way to make AST. Let's go!
+
+## Nodes that make up JSON
+
+Before we start, we need to know about nodes that make up JSON.
+
+There's list of nodes that make up JSON: 
+
+- `Object`
+- `Array`
+- `String`
+- `Number`
+- `Boolean`
+
+## How to make parser
+
+Let's make parser that parse JSON.
+
+`infinite` assumes each language element has seperated role. (ex. All of JSON elements has role of `expression`)
+
+It makes parser easy to make.
+
+import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+
+Coding time! We'll see three seperated parser.
+
+Each parser has simillar structure, so we'll see some of them.
+
+<Steps>
+
+### Step 0. Make a file named `parsers/string.ts`
+
+```bash
+mkdir parsers
+
+touch parsers/string.ts
+```
+
+### Step 1. Import makeTokenizeRuleModule() function from `infinite-lang`
+
+```ts fileName = "/parsers/string.ts"
+import { makeParseRuleModule } from "infinite-lang/rule/parser";
+```
+
+### Step 2: Make a parse rule with makeParseRuleModule() function and export it
+
+```ts fileName = "/parsers/string.ts"
+export default makeParseRuleModule({}, []);
+```
+
+### Step 3: Add options to the first argument of makeParseRuleModule() function
+
+```ts fileName = "/parsers/string.ts"
+import { makeParseRuleModule } from "infinite-lang/rule/parser";
+
+export default makeParseRuleModule({
+    nodeType: "string",
+    priority: 0,
+    role: "expression",
+    isTopLevel: true
+}, []);
+```
+
+`nodeType` is the type of node that this parser makes.
+
+`priority` is the priority of this parser. If there are two parsers that can parse same token, parser with higher priority will be used.
+
+`role` is the role of this parser. It is used to make AST.
+
+`isTopLevel` is the flag that this parser can parse top level of source code.
+
+### Step 4: Add rules to the second argument of makeParseRuleModule() function
+
+```ts fileName = "/parsers/string.ts"
+import { makeParseRuleModule } from "infinite-lang/rule/parser";
+
+export default makeParseRuleModule({
+    nodeType: "string",
+    priority: 0,
+    role: "expression",
+    isTopLevel: true
+}, [
+    {
+        tokenType: "String"
+    }
+]);
+```
+
+Secord arguments accepts array of rules. Each rule can use token or other parser rule.
+
+</Steps>
+
+But it's too simple example. It can parses with more complex rules:
+
+```ts fileName = "/parsers/expressionWithcomma.ts"
+import { makeParseRuleModule } from "infinite-lang/rule/parser";
+
+export default makeParseRuleModule({
+    nodeType: "expressionWithComma",
+    priority: 0,
+    role: "expressionWithComma",
+    isTopLevel: false
+}, [
+    {
+        role: "expression",
+        condition: () => true,
+        key: "expression"
+    },
+    {
+        tokenType: "Comma"
+    }
+]);
+```
+
+```ts fileName = "/parsers/array.ts"
+import { makeParseRuleModule } from "infinite-lang/rule/parser";
+
+export default makeParseRuleModule({
+    nodeType: "array",
+    priority: 0,
+    role: "array",
+    isTopLevel: true
+}, [
+    {
+        tokenType: "LBracket"  
+    },
+    {
+        role: "expressionWithComma",
+        condition: () => true,
+        key: "expressions",
+        isRepeatable: true
+    },
+    {
+        role: "expression",
+        condition: () => true,
+        key: "lastExpression"
+    },
+    {
+        tokenType: "RBracket"
+    }
+]);
+```
+
+for strict parsing, we needed to make `expressionWithComma` parser.
+
+Explain full JSON parser code is too long. If you want to see full code, see 
+[here](https://github.com/SieR-VR/infinite-docs/tree/master/example)
+
+## See the result
+
+If you want to see the result, you can make simple script file as same as lexer:
+
+```ts fileName = "/script-parser.ts"
+import { readFileSync, writeFileSync } from 'fs';
+
+import { tokenize } from 'infinite-lang/core/tokenizer';
+import { parse } from 'infinite-lang/core/parser';
+
+import TokenizeRules from './tokens';
+import ParseRules from './parser';
+
+const sourceCode = readFileSync('./test.json', 'utf-8');
+
+const tokens = tokenize({
+    input: sourceCode,
+    fileName: 'test.json',
+}, TokenizeRules).unwrap();
+
+const AST = parse({
+    tokens,
+    fileName: 'test.json',
+}, ParseRules, () => {}).unwrap();
+
+console.dir(AST, { depth: null });
+writeFileSync('./test.ast.json', JSON.stringify(AST, null, 4));
+```
+
+and run it:
+
+```bash
+ts-node script-parser.ts
+```
+
+or your favorite way to run typescript.
+
+### Result
+
+```json
+[
+    {
+        "nodeType": "object",
+        "innerText": "{\"hello\":\"world\",\"number\":123,\"array\":[1,2,3],\"object\":{\"hello\":\"world\"}}",
+        "startPos": 0,
+        "endPos": 137,
+        "pairs": [
+            {
+                "nodeType": "keyValuePairWithComma",
+                "innerText": "\"hello\":\"world\",",
+                "startPos": 6,
+                "endPos": 22,
+                "pair": {
+                    "nodeType": "keyValuePair",
+                    "innerText": "\"hello\":\"world\"",
+                    "startPos": 6,
+                    "endPos": 22,
+                    "key": {
+                        "nodeType": "objectKey",
+                        "innerText": "\"hello\"",
+                        "startPos": 6,
+                        "endPos": 13,
+                        "children": []
+                    },
+                    "value": {
+                        "nodeType": "string",
+                        "innerText": "\"world\"",
+                        "startPos": 15,
+                        "endPos": 22,
+                        "children": []
+                    }
+                }
+            },
+            {
+                "nodeType": "keyValuePairWithComma",
+                "innerText": "\"number\":123,",
+                "startPos": 28,
+                "endPos": 41,
+...
+```
+(Too long to show all of it)
+
+Anyway, boom! We made JSON parser! 🎉

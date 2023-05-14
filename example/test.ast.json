@@ -1,0 +1,1722 @@
+[
+    {
+        "nodeType": "object",
+        "innerText": "{\"hello\":\"world\",\"number\":123,\"array\":[1,2,3],\"object\":{\"hello\":\"world\"}}",
+        "startPos": 0,
+        "endPos": 137,
+        "children": [
+            [
+                {
+                    "nodeType": "keyValuePairWithComma",
+                    "innerText": "\"hello\":\"world\",",
+                    "startPos": 6,
+                    "endPos": 22,
+                    "children": [
+                        {
+                            "nodeType": "keyValuePair",
+                            "innerText": "\"hello\":\"world\"",
+                            "startPos": 6,
+                            "endPos": 22,
+                            "children": [
+                                {
+                                    "nodeType": "objectKey",
+                                    "innerText": "\"hello\"",
+                                    "startPos": 6,
+                                    "endPos": 13,
+                                    "children": []
+                                },
+                                {
+                                    "nodeType": "string",
+                                    "innerText": "\"world\"",
+                                    "startPos": 15,
+                                    "endPos": 22,
+                                    "children": []
+                                }
+                            ],
+                            "key": {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 6,
+                                "endPos": 13,
+                                "children": []
+                            },
+                            "value": {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 15,
+                                "endPos": 22,
+                                "children": []
+                            }
+                        }
+                    ],
+                    "pair": {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"hello\":\"world\"",
+                        "startPos": 6,
+                        "endPos": 22,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 6,
+                                "endPos": 13,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 15,
+                                "endPos": 22,
+                                "children": []
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"hello\"",
+                            "startPos": 6,
+                            "endPos": 13,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "string",
+                            "innerText": "\"world\"",
+                            "startPos": 15,
+                            "endPos": 22,
+                            "children": []
+                        }
+                    }
+                },
+                {
+                    "nodeType": "keyValuePairWithComma",
+                    "innerText": "\"number\":123,",
+                    "startPos": 28,
+                    "endPos": 41,
+                    "children": [
+                        {
+                            "nodeType": "keyValuePair",
+                            "innerText": "\"number\":123",
+                            "startPos": 28,
+                            "endPos": 41,
+                            "children": [
+                                {
+                                    "nodeType": "objectKey",
+                                    "innerText": "\"number\"",
+                                    "startPos": 28,
+                                    "endPos": 36,
+                                    "children": []
+                                },
+                                {
+                                    "nodeType": "number",
+                                    "innerText": "123",
+                                    "startPos": 38,
+                                    "endPos": 41,
+                                    "children": []
+                                }
+                            ],
+                            "key": {
+                                "nodeType": "objectKey",
+                                "innerText": "\"number\"",
+                                "startPos": 28,
+                                "endPos": 36,
+                                "children": []
+                            },
+                            "value": {
+                                "nodeType": "number",
+                                "innerText": "123",
+                                "startPos": 38,
+                                "endPos": 41,
+                                "children": []
+                            }
+                        }
+                    ],
+                    "pair": {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"number\":123",
+                        "startPos": 28,
+                        "endPos": 41,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"number\"",
+                                "startPos": 28,
+                                "endPos": 36,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "number",
+                                "innerText": "123",
+                                "startPos": 38,
+                                "endPos": 41,
+                                "children": []
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"number\"",
+                            "startPos": 28,
+                            "endPos": 36,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "number",
+                            "innerText": "123",
+                            "startPos": 38,
+                            "endPos": 41,
+                            "children": []
+                        }
+                    }
+                },
+                {
+                    "nodeType": "keyValuePairWithComma",
+                    "innerText": "\"array\":[1,2,3],",
+                    "startPos": 47,
+                    "endPos": 89,
+                    "children": [
+                        {
+                            "nodeType": "keyValuePair",
+                            "innerText": "\"array\":[1,2,3]",
+                            "startPos": 47,
+                            "endPos": 89,
+                            "children": [
+                                {
+                                    "nodeType": "objectKey",
+                                    "innerText": "\"array\"",
+                                    "startPos": 47,
+                                    "endPos": 54,
+                                    "children": []
+                                },
+                                {
+                                    "nodeType": "array",
+                                    "innerText": "[1,2,3]",
+                                    "startPos": 56,
+                                    "endPos": 89,
+                                    "children": [
+                                        [
+                                            {
+                                                "nodeType": "expressionWithComma",
+                                                "innerText": "1,",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": [
+                                                    {
+                                                        "nodeType": "number",
+                                                        "innerText": "1",
+                                                        "startPos": 66,
+                                                        "endPos": 67,
+                                                        "children": []
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "nodeType": "number",
+                                                    "innerText": "1",
+                                                    "startPos": 66,
+                                                    "endPos": 67,
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "nodeType": "expressionWithComma",
+                                                "innerText": "2,",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": [
+                                                    {
+                                                        "nodeType": "number",
+                                                        "innerText": "2",
+                                                        "startPos": 77,
+                                                        "endPos": 78,
+                                                        "children": []
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "nodeType": "number",
+                                                    "innerText": "2",
+                                                    "startPos": 77,
+                                                    "endPos": 78,
+                                                    "children": []
+                                                }
+                                            }
+                                        ],
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "3",
+                                            "startPos": 88,
+                                            "endPos": 89,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expressions": [
+                                        {
+                                            "nodeType": "expressionWithComma",
+                                            "innerText": "1,",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": [
+                                                {
+                                                    "nodeType": "number",
+                                                    "innerText": "1",
+                                                    "startPos": 66,
+                                                    "endPos": 67,
+                                                    "children": []
+                                                }
+                                            ],
+                                            "expression": {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        },
+                                        {
+                                            "nodeType": "expressionWithComma",
+                                            "innerText": "2,",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": [
+                                                {
+                                                    "nodeType": "number",
+                                                    "innerText": "2",
+                                                    "startPos": 77,
+                                                    "endPos": 78,
+                                                    "children": []
+                                                }
+                                            ],
+                                            "expression": {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        }
+                                    ],
+                                    "lastExpression": {
+                                        "nodeType": "number",
+                                        "innerText": "3",
+                                        "startPos": 88,
+                                        "endPos": 89,
+                                        "children": []
+                                    }
+                                }
+                            ],
+                            "key": {
+                                "nodeType": "objectKey",
+                                "innerText": "\"array\"",
+                                "startPos": 47,
+                                "endPos": 54,
+                                "children": []
+                            },
+                            "value": {
+                                "nodeType": "array",
+                                "innerText": "[1,2,3]",
+                                "startPos": 56,
+                                "endPos": 89,
+                                "children": [
+                                    [
+                                        {
+                                            "nodeType": "expressionWithComma",
+                                            "innerText": "1,",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": [
+                                                {
+                                                    "nodeType": "number",
+                                                    "innerText": "1",
+                                                    "startPos": 66,
+                                                    "endPos": 67,
+                                                    "children": []
+                                                }
+                                            ],
+                                            "expression": {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        },
+                                        {
+                                            "nodeType": "expressionWithComma",
+                                            "innerText": "2,",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": [
+                                                {
+                                                    "nodeType": "number",
+                                                    "innerText": "2",
+                                                    "startPos": 77,
+                                                    "endPos": 78,
+                                                    "children": []
+                                                }
+                                            ],
+                                            "expression": {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        }
+                                    ],
+                                    {
+                                        "nodeType": "number",
+                                        "innerText": "3",
+                                        "startPos": 88,
+                                        "endPos": 89,
+                                        "children": []
+                                    }
+                                ],
+                                "expressions": [
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "1,",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    },
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "2,",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    }
+                                ],
+                                "lastExpression": {
+                                    "nodeType": "number",
+                                    "innerText": "3",
+                                    "startPos": 88,
+                                    "endPos": 89,
+                                    "children": []
+                                }
+                            }
+                        }
+                    ],
+                    "pair": {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"array\":[1,2,3]",
+                        "startPos": 47,
+                        "endPos": 89,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"array\"",
+                                "startPos": 47,
+                                "endPos": 54,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "array",
+                                "innerText": "[1,2,3]",
+                                "startPos": 56,
+                                "endPos": 89,
+                                "children": [
+                                    [
+                                        {
+                                            "nodeType": "expressionWithComma",
+                                            "innerText": "1,",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": [
+                                                {
+                                                    "nodeType": "number",
+                                                    "innerText": "1",
+                                                    "startPos": 66,
+                                                    "endPos": 67,
+                                                    "children": []
+                                                }
+                                            ],
+                                            "expression": {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        },
+                                        {
+                                            "nodeType": "expressionWithComma",
+                                            "innerText": "2,",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": [
+                                                {
+                                                    "nodeType": "number",
+                                                    "innerText": "2",
+                                                    "startPos": 77,
+                                                    "endPos": 78,
+                                                    "children": []
+                                                }
+                                            ],
+                                            "expression": {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        }
+                                    ],
+                                    {
+                                        "nodeType": "number",
+                                        "innerText": "3",
+                                        "startPos": 88,
+                                        "endPos": 89,
+                                        "children": []
+                                    }
+                                ],
+                                "expressions": [
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "1,",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    },
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "2,",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    }
+                                ],
+                                "lastExpression": {
+                                    "nodeType": "number",
+                                    "innerText": "3",
+                                    "startPos": 88,
+                                    "endPos": 89,
+                                    "children": []
+                                }
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"array\"",
+                            "startPos": 47,
+                            "endPos": 54,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "array",
+                            "innerText": "[1,2,3]",
+                            "startPos": 56,
+                            "endPos": 89,
+                            "children": [
+                                [
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "1,",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    },
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "2,",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    }
+                                ],
+                                {
+                                    "nodeType": "number",
+                                    "innerText": "3",
+                                    "startPos": 88,
+                                    "endPos": 89,
+                                    "children": []
+                                }
+                            ],
+                            "expressions": [
+                                {
+                                    "nodeType": "expressionWithComma",
+                                    "innerText": "1,",
+                                    "startPos": 66,
+                                    "endPos": 67,
+                                    "children": [
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expression": {
+                                        "nodeType": "number",
+                                        "innerText": "1",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": []
+                                    }
+                                },
+                                {
+                                    "nodeType": "expressionWithComma",
+                                    "innerText": "2,",
+                                    "startPos": 77,
+                                    "endPos": 78,
+                                    "children": [
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expression": {
+                                        "nodeType": "number",
+                                        "innerText": "2",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": []
+                                    }
+                                }
+                            ],
+                            "lastExpression": {
+                                "nodeType": "number",
+                                "innerText": "3",
+                                "startPos": 88,
+                                "endPos": 89,
+                                "children": []
+                            }
+                        }
+                    }
+                }
+            ],
+            {
+                "nodeType": "keyValuePair",
+                "innerText": "\"object\":{\"hello\":\"world\"}",
+                "startPos": 101,
+                "endPos": 137,
+                "children": [
+                    {
+                        "nodeType": "objectKey",
+                        "innerText": "\"object\"",
+                        "startPos": 101,
+                        "endPos": 109,
+                        "children": []
+                    },
+                    {
+                        "nodeType": "object",
+                        "innerText": "{\"hello\":\"world\"}",
+                        "startPos": 111,
+                        "endPos": 137,
+                        "children": [
+                            [],
+                            {
+                                "nodeType": "keyValuePair",
+                                "innerText": "\"hello\":\"world\"",
+                                "startPos": 121,
+                                "endPos": 137,
+                                "children": [
+                                    {
+                                        "nodeType": "objectKey",
+                                        "innerText": "\"hello\"",
+                                        "startPos": 121,
+                                        "endPos": 128,
+                                        "children": []
+                                    },
+                                    {
+                                        "nodeType": "string",
+                                        "innerText": "\"world\"",
+                                        "startPos": 130,
+                                        "endPos": 137,
+                                        "children": []
+                                    }
+                                ],
+                                "key": {
+                                    "nodeType": "objectKey",
+                                    "innerText": "\"hello\"",
+                                    "startPos": 121,
+                                    "endPos": 128,
+                                    "children": []
+                                },
+                                "value": {
+                                    "nodeType": "string",
+                                    "innerText": "\"world\"",
+                                    "startPos": 130,
+                                    "endPos": 137,
+                                    "children": []
+                                }
+                            }
+                        ],
+                        "pairs": [],
+                        "lastPair": {
+                            "nodeType": "keyValuePair",
+                            "innerText": "\"hello\":\"world\"",
+                            "startPos": 121,
+                            "endPos": 137,
+                            "children": [
+                                {
+                                    "nodeType": "objectKey",
+                                    "innerText": "\"hello\"",
+                                    "startPos": 121,
+                                    "endPos": 128,
+                                    "children": []
+                                },
+                                {
+                                    "nodeType": "string",
+                                    "innerText": "\"world\"",
+                                    "startPos": 130,
+                                    "endPos": 137,
+                                    "children": []
+                                }
+                            ],
+                            "key": {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 121,
+                                "endPos": 128,
+                                "children": []
+                            },
+                            "value": {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 130,
+                                "endPos": 137,
+                                "children": []
+                            }
+                        }
+                    }
+                ],
+                "key": {
+                    "nodeType": "objectKey",
+                    "innerText": "\"object\"",
+                    "startPos": 101,
+                    "endPos": 109,
+                    "children": []
+                },
+                "value": {
+                    "nodeType": "object",
+                    "innerText": "{\"hello\":\"world\"}",
+                    "startPos": 111,
+                    "endPos": 137,
+                    "children": [
+                        [],
+                        {
+                            "nodeType": "keyValuePair",
+                            "innerText": "\"hello\":\"world\"",
+                            "startPos": 121,
+                            "endPos": 137,
+                            "children": [
+                                {
+                                    "nodeType": "objectKey",
+                                    "innerText": "\"hello\"",
+                                    "startPos": 121,
+                                    "endPos": 128,
+                                    "children": []
+                                },
+                                {
+                                    "nodeType": "string",
+                                    "innerText": "\"world\"",
+                                    "startPos": 130,
+                                    "endPos": 137,
+                                    "children": []
+                                }
+                            ],
+                            "key": {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 121,
+                                "endPos": 128,
+                                "children": []
+                            },
+                            "value": {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 130,
+                                "endPos": 137,
+                                "children": []
+                            }
+                        }
+                    ],
+                    "pairs": [],
+                    "lastPair": {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"hello\":\"world\"",
+                        "startPos": 121,
+                        "endPos": 137,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 121,
+                                "endPos": 128,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 130,
+                                "endPos": 137,
+                                "children": []
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"hello\"",
+                            "startPos": 121,
+                            "endPos": 128,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "string",
+                            "innerText": "\"world\"",
+                            "startPos": 130,
+                            "endPos": 137,
+                            "children": []
+                        }
+                    }
+                }
+            }
+        ],
+        "pairs": [
+            {
+                "nodeType": "keyValuePairWithComma",
+                "innerText": "\"hello\":\"world\",",
+                "startPos": 6,
+                "endPos": 22,
+                "children": [
+                    {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"hello\":\"world\"",
+                        "startPos": 6,
+                        "endPos": 22,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 6,
+                                "endPos": 13,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 15,
+                                "endPos": 22,
+                                "children": []
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"hello\"",
+                            "startPos": 6,
+                            "endPos": 13,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "string",
+                            "innerText": "\"world\"",
+                            "startPos": 15,
+                            "endPos": 22,
+                            "children": []
+                        }
+                    }
+                ],
+                "pair": {
+                    "nodeType": "keyValuePair",
+                    "innerText": "\"hello\":\"world\"",
+                    "startPos": 6,
+                    "endPos": 22,
+                    "children": [
+                        {
+                            "nodeType": "objectKey",
+                            "innerText": "\"hello\"",
+                            "startPos": 6,
+                            "endPos": 13,
+                            "children": []
+                        },
+                        {
+                            "nodeType": "string",
+                            "innerText": "\"world\"",
+                            "startPos": 15,
+                            "endPos": 22,
+                            "children": []
+                        }
+                    ],
+                    "key": {
+                        "nodeType": "objectKey",
+                        "innerText": "\"hello\"",
+                        "startPos": 6,
+                        "endPos": 13,
+                        "children": []
+                    },
+                    "value": {
+                        "nodeType": "string",
+                        "innerText": "\"world\"",
+                        "startPos": 15,
+                        "endPos": 22,
+                        "children": []
+                    }
+                }
+            },
+            {
+                "nodeType": "keyValuePairWithComma",
+                "innerText": "\"number\":123,",
+                "startPos": 28,
+                "endPos": 41,
+                "children": [
+                    {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"number\":123",
+                        "startPos": 28,
+                        "endPos": 41,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"number\"",
+                                "startPos": 28,
+                                "endPos": 36,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "number",
+                                "innerText": "123",
+                                "startPos": 38,
+                                "endPos": 41,
+                                "children": []
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"number\"",
+                            "startPos": 28,
+                            "endPos": 36,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "number",
+                            "innerText": "123",
+                            "startPos": 38,
+                            "endPos": 41,
+                            "children": []
+                        }
+                    }
+                ],
+                "pair": {
+                    "nodeType": "keyValuePair",
+                    "innerText": "\"number\":123",
+                    "startPos": 28,
+                    "endPos": 41,
+                    "children": [
+                        {
+                            "nodeType": "objectKey",
+                            "innerText": "\"number\"",
+                            "startPos": 28,
+                            "endPos": 36,
+                            "children": []
+                        },
+                        {
+                            "nodeType": "number",
+                            "innerText": "123",
+                            "startPos": 38,
+                            "endPos": 41,
+                            "children": []
+                        }
+                    ],
+                    "key": {
+                        "nodeType": "objectKey",
+                        "innerText": "\"number\"",
+                        "startPos": 28,
+                        "endPos": 36,
+                        "children": []
+                    },
+                    "value": {
+                        "nodeType": "number",
+                        "innerText": "123",
+                        "startPos": 38,
+                        "endPos": 41,
+                        "children": []
+                    }
+                }
+            },
+            {
+                "nodeType": "keyValuePairWithComma",
+                "innerText": "\"array\":[1,2,3],",
+                "startPos": 47,
+                "endPos": 89,
+                "children": [
+                    {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"array\":[1,2,3]",
+                        "startPos": 47,
+                        "endPos": 89,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"array\"",
+                                "startPos": 47,
+                                "endPos": 54,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "array",
+                                "innerText": "[1,2,3]",
+                                "startPos": 56,
+                                "endPos": 89,
+                                "children": [
+                                    [
+                                        {
+                                            "nodeType": "expressionWithComma",
+                                            "innerText": "1,",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": [
+                                                {
+                                                    "nodeType": "number",
+                                                    "innerText": "1",
+                                                    "startPos": 66,
+                                                    "endPos": 67,
+                                                    "children": []
+                                                }
+                                            ],
+                                            "expression": {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        },
+                                        {
+                                            "nodeType": "expressionWithComma",
+                                            "innerText": "2,",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": [
+                                                {
+                                                    "nodeType": "number",
+                                                    "innerText": "2",
+                                                    "startPos": 77,
+                                                    "endPos": 78,
+                                                    "children": []
+                                                }
+                                            ],
+                                            "expression": {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        }
+                                    ],
+                                    {
+                                        "nodeType": "number",
+                                        "innerText": "3",
+                                        "startPos": 88,
+                                        "endPos": 89,
+                                        "children": []
+                                    }
+                                ],
+                                "expressions": [
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "1,",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    },
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "2,",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    }
+                                ],
+                                "lastExpression": {
+                                    "nodeType": "number",
+                                    "innerText": "3",
+                                    "startPos": 88,
+                                    "endPos": 89,
+                                    "children": []
+                                }
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"array\"",
+                            "startPos": 47,
+                            "endPos": 54,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "array",
+                            "innerText": "[1,2,3]",
+                            "startPos": 56,
+                            "endPos": 89,
+                            "children": [
+                                [
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "1,",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    },
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "2,",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    }
+                                ],
+                                {
+                                    "nodeType": "number",
+                                    "innerText": "3",
+                                    "startPos": 88,
+                                    "endPos": 89,
+                                    "children": []
+                                }
+                            ],
+                            "expressions": [
+                                {
+                                    "nodeType": "expressionWithComma",
+                                    "innerText": "1,",
+                                    "startPos": 66,
+                                    "endPos": 67,
+                                    "children": [
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expression": {
+                                        "nodeType": "number",
+                                        "innerText": "1",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": []
+                                    }
+                                },
+                                {
+                                    "nodeType": "expressionWithComma",
+                                    "innerText": "2,",
+                                    "startPos": 77,
+                                    "endPos": 78,
+                                    "children": [
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expression": {
+                                        "nodeType": "number",
+                                        "innerText": "2",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": []
+                                    }
+                                }
+                            ],
+                            "lastExpression": {
+                                "nodeType": "number",
+                                "innerText": "3",
+                                "startPos": 88,
+                                "endPos": 89,
+                                "children": []
+                            }
+                        }
+                    }
+                ],
+                "pair": {
+                    "nodeType": "keyValuePair",
+                    "innerText": "\"array\":[1,2,3]",
+                    "startPos": 47,
+                    "endPos": 89,
+                    "children": [
+                        {
+                            "nodeType": "objectKey",
+                            "innerText": "\"array\"",
+                            "startPos": 47,
+                            "endPos": 54,
+                            "children": []
+                        },
+                        {
+                            "nodeType": "array",
+                            "innerText": "[1,2,3]",
+                            "startPos": 56,
+                            "endPos": 89,
+                            "children": [
+                                [
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "1,",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "1",
+                                                "startPos": 66,
+                                                "endPos": 67,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    },
+                                    {
+                                        "nodeType": "expressionWithComma",
+                                        "innerText": "2,",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": [
+                                            {
+                                                "nodeType": "number",
+                                                "innerText": "2",
+                                                "startPos": 77,
+                                                "endPos": 78,
+                                                "children": []
+                                            }
+                                        ],
+                                        "expression": {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    }
+                                ],
+                                {
+                                    "nodeType": "number",
+                                    "innerText": "3",
+                                    "startPos": 88,
+                                    "endPos": 89,
+                                    "children": []
+                                }
+                            ],
+                            "expressions": [
+                                {
+                                    "nodeType": "expressionWithComma",
+                                    "innerText": "1,",
+                                    "startPos": 66,
+                                    "endPos": 67,
+                                    "children": [
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expression": {
+                                        "nodeType": "number",
+                                        "innerText": "1",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": []
+                                    }
+                                },
+                                {
+                                    "nodeType": "expressionWithComma",
+                                    "innerText": "2,",
+                                    "startPos": 77,
+                                    "endPos": 78,
+                                    "children": [
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expression": {
+                                        "nodeType": "number",
+                                        "innerText": "2",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": []
+                                    }
+                                }
+                            ],
+                            "lastExpression": {
+                                "nodeType": "number",
+                                "innerText": "3",
+                                "startPos": 88,
+                                "endPos": 89,
+                                "children": []
+                            }
+                        }
+                    ],
+                    "key": {
+                        "nodeType": "objectKey",
+                        "innerText": "\"array\"",
+                        "startPos": 47,
+                        "endPos": 54,
+                        "children": []
+                    },
+                    "value": {
+                        "nodeType": "array",
+                        "innerText": "[1,2,3]",
+                        "startPos": 56,
+                        "endPos": 89,
+                        "children": [
+                            [
+                                {
+                                    "nodeType": "expressionWithComma",
+                                    "innerText": "1,",
+                                    "startPos": 66,
+                                    "endPos": 67,
+                                    "children": [
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "1",
+                                            "startPos": 66,
+                                            "endPos": 67,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expression": {
+                                        "nodeType": "number",
+                                        "innerText": "1",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": []
+                                    }
+                                },
+                                {
+                                    "nodeType": "expressionWithComma",
+                                    "innerText": "2,",
+                                    "startPos": 77,
+                                    "endPos": 78,
+                                    "children": [
+                                        {
+                                            "nodeType": "number",
+                                            "innerText": "2",
+                                            "startPos": 77,
+                                            "endPos": 78,
+                                            "children": []
+                                        }
+                                    ],
+                                    "expression": {
+                                        "nodeType": "number",
+                                        "innerText": "2",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": []
+                                    }
+                                }
+                            ],
+                            {
+                                "nodeType": "number",
+                                "innerText": "3",
+                                "startPos": 88,
+                                "endPos": 89,
+                                "children": []
+                            }
+                        ],
+                        "expressions": [
+                            {
+                                "nodeType": "expressionWithComma",
+                                "innerText": "1,",
+                                "startPos": 66,
+                                "endPos": 67,
+                                "children": [
+                                    {
+                                        "nodeType": "number",
+                                        "innerText": "1",
+                                        "startPos": 66,
+                                        "endPos": 67,
+                                        "children": []
+                                    }
+                                ],
+                                "expression": {
+                                    "nodeType": "number",
+                                    "innerText": "1",
+                                    "startPos": 66,
+                                    "endPos": 67,
+                                    "children": []
+                                }
+                            },
+                            {
+                                "nodeType": "expressionWithComma",
+                                "innerText": "2,",
+                                "startPos": 77,
+                                "endPos": 78,
+                                "children": [
+                                    {
+                                        "nodeType": "number",
+                                        "innerText": "2",
+                                        "startPos": 77,
+                                        "endPos": 78,
+                                        "children": []
+                                    }
+                                ],
+                                "expression": {
+                                    "nodeType": "number",
+                                    "innerText": "2",
+                                    "startPos": 77,
+                                    "endPos": 78,
+                                    "children": []
+                                }
+                            }
+                        ],
+                        "lastExpression": {
+                            "nodeType": "number",
+                            "innerText": "3",
+                            "startPos": 88,
+                            "endPos": 89,
+                            "children": []
+                        }
+                    }
+                }
+            }
+        ],
+        "lastPair": {
+            "nodeType": "keyValuePair",
+            "innerText": "\"object\":{\"hello\":\"world\"}",
+            "startPos": 101,
+            "endPos": 137,
+            "children": [
+                {
+                    "nodeType": "objectKey",
+                    "innerText": "\"object\"",
+                    "startPos": 101,
+                    "endPos": 109,
+                    "children": []
+                },
+                {
+                    "nodeType": "object",
+                    "innerText": "{\"hello\":\"world\"}",
+                    "startPos": 111,
+                    "endPos": 137,
+                    "children": [
+                        [],
+                        {
+                            "nodeType": "keyValuePair",
+                            "innerText": "\"hello\":\"world\"",
+                            "startPos": 121,
+                            "endPos": 137,
+                            "children": [
+                                {
+                                    "nodeType": "objectKey",
+                                    "innerText": "\"hello\"",
+                                    "startPos": 121,
+                                    "endPos": 128,
+                                    "children": []
+                                },
+                                {
+                                    "nodeType": "string",
+                                    "innerText": "\"world\"",
+                                    "startPos": 130,
+                                    "endPos": 137,
+                                    "children": []
+                                }
+                            ],
+                            "key": {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 121,
+                                "endPos": 128,
+                                "children": []
+                            },
+                            "value": {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 130,
+                                "endPos": 137,
+                                "children": []
+                            }
+                        }
+                    ],
+                    "pairs": [],
+                    "lastPair": {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"hello\":\"world\"",
+                        "startPos": 121,
+                        "endPos": 137,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 121,
+                                "endPos": 128,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 130,
+                                "endPos": 137,
+                                "children": []
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"hello\"",
+                            "startPos": 121,
+                            "endPos": 128,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "string",
+                            "innerText": "\"world\"",
+                            "startPos": 130,
+                            "endPos": 137,
+                            "children": []
+                        }
+                    }
+                }
+            ],
+            "key": {
+                "nodeType": "objectKey",
+                "innerText": "\"object\"",
+                "startPos": 101,
+                "endPos": 109,
+                "children": []
+            },
+            "value": {
+                "nodeType": "object",
+                "innerText": "{\"hello\":\"world\"}",
+                "startPos": 111,
+                "endPos": 137,
+                "children": [
+                    [],
+                    {
+                        "nodeType": "keyValuePair",
+                        "innerText": "\"hello\":\"world\"",
+                        "startPos": 121,
+                        "endPos": 137,
+                        "children": [
+                            {
+                                "nodeType": "objectKey",
+                                "innerText": "\"hello\"",
+                                "startPos": 121,
+                                "endPos": 128,
+                                "children": []
+                            },
+                            {
+                                "nodeType": "string",
+                                "innerText": "\"world\"",
+                                "startPos": 130,
+                                "endPos": 137,
+                                "children": []
+                            }
+                        ],
+                        "key": {
+                            "nodeType": "objectKey",
+                            "innerText": "\"hello\"",
+                            "startPos": 121,
+                            "endPos": 128,
+                            "children": []
+                        },
+                        "value": {
+                            "nodeType": "string",
+                            "innerText": "\"world\"",
+                            "startPos": 130,
+                            "endPos": 137,
+                            "children": []
+                        }
+                    }
+                ],
+                "pairs": [],
+                "lastPair": {
+                    "nodeType": "keyValuePair",
+                    "innerText": "\"hello\":\"world\"",
+                    "startPos": 121,
+                    "endPos": 137,
+                    "children": [
+                        {
+                            "nodeType": "objectKey",
+                            "innerText": "\"hello\"",
+                            "startPos": 121,
+                            "endPos": 128,
+                            "children": []
+                        },
+                        {
+                            "nodeType": "string",
+                            "innerText": "\"world\"",
+                            "startPos": 130,
+                            "endPos": 137,
+                            "children": []
+                        }
+                    ],
+                    "key": {
+                        "nodeType": "objectKey",
+                        "innerText": "\"hello\"",
+                        "startPos": 121,
+                        "endPos": 128,
+                        "children": []
+                    },
+                    "value": {
+                        "nodeType": "string",
+                        "innerText": "\"world\"",
+                        "startPos": 130,
+                        "endPos": 137,
+                        "children": []
+                    }
+                }
+            }
+        }
+    }
+]
