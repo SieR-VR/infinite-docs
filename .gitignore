@@ -3,6 +3,7 @@ node_modules
 
 # build result
 .next
+out
 
 # local env files
 .env.local
