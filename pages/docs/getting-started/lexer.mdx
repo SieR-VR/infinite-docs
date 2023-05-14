@@ -1,0 +1,246 @@
+## Lexer?
+
+[Lexer](https://en.wikipedia.org/wiki/Lexical_analysis) makes source codes into tokens.
+Token is a small unit of source code, like a word in a sentence.
+
+`infinite` tokenizer makes tokens from source code like this:
+
+```json
+[
+    { "tokenType": "LBrace", "innerString": "{", "startPos": "0", "endPos": "1" },
+    { "tokenType": "RBrace", "innerString": "}", "startPos": "1", "endPos": "2" }
+]
+```
+
+is a tokenized result of valid json `{}`.
+
+## Tokens used in json
+
+We are making a `json` lexer, so we need to know what tokens are used in json.
+
+We will use these tokens: 
+
+- `LBrace`: `{`
+- `RBrace`: `}`
+- `LBracket`: `[`
+- `RBracket`: `]`
+- `Comma`: `,`
+- `Colon`: `:`
+- `String`: like `"string"`
+- `Number`: like `123`
+- `True`: `true`
+- `False`: `false`
+
+## How to make a lexer
+
+import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+
+Coding time! We will use `typescript` to make a lexer.
+
+<Steps>
+
+### Step 0: Make a file named `tokens.ts`
+
+```bash
+touch tokens.ts
+```
+
+or just make a file named `tokens.ts` in your editor.
+
+### Step 1: Import makeTokenizeRule() function from `infinite-lang`
+
+```typescript filename="/tokens.ts"
+import { makeTokenizeRule } from 'infinite-lang/rule/tokenizer';
+```
+
+### Step 2: Make a tokenize rule with makeTokenizeRule() function and export it
+
+```typescript filename="/tokens.ts"
+import { makeTokenizeRule } from 'infinite-lang/rule/tokenizer';
+
+export default makeTokenizeRule([])
+```
+
+### Step 3: Make a tokenize rule
+
+```typescript filename="/tokens.ts"
+import { makeTokenizeRule } from 'infinite-lang/rule/tokenizer';
+
+export default makeTokenizeRule([
+    {
+        tokenType: 'LBrace',
+        string: '{',
+        priority: 0
+    },
+    {
+        tokenType: 'RBrace',
+        string: '}',
+        priority: 0
+    },
+    {
+        tokenType: 'LBracket',
+        string: '[',
+        priority: 0
+    },
+    {
+        tokenType: 'RBracket',
+        string: ']',
+        priority: 0
+    },
+    {
+        tokenType: 'Comma',
+        string: ',',
+        priority: 0
+    },
+    {
+        tokenType: 'Colon',
+        string: ':',
+        priority: 0
+    },
+    {
+        tokenType: 'String',
+        regex: /"[^"]*"/,
+        priority: 0
+    },
+    {
+        tokenType: 'Number',
+        regex: /[0-9]+/,
+        priority: 0
+    },
+    {
+        tokenType: 'True',
+        string: 'true',
+        priority: 0
+    },
+    {
+        tokenType: 'False',
+        string: 'false',
+        priority: 0
+    }
+]);
+```
+
+For simplicity, we won't handle some syntax, like escape characters in `String`.
+
+As you can see, we can use `string` or `regex` to match tokens. (It supports also function code)
+
+We should use `priority` to make sure that some important tokens(mostly keywords) are not matched before other tokens.
+
+</Steps>
+
+That's it! You made a lexer!
+
+If you want to see the result, you can make simple script file:
+
+```typescript filename="/script-lexer.ts"
+import { readFileSync } from 'fs';
+
+import { tokenize } from 'infinite-lang/core/tokenizer';
+import TokenizeRules from './tokens';
+
+const sourceCode = readFileSync('./test.json', 'utf-8');
+const tokens = tokenize({
+    input: sourceCode,
+    fileName: 'test.json',
+}, TokenizeRules);
+
+console.log(tokens.unwrap()); // Internally uses `unwrap()` function to get the result (avoid to use try-catch)
+```
+
+And make a file named `test.json`:
+
+```json filename="/test.json"
+{
+    "hello": "world",
+    "number": 123,
+    "array": [
+        1,
+        2,
+        3
+    ],
+    "object": {
+        "hello": "world"
+    }
+}
+```
+
+And run the script:
+
+```bash
+ts-node script-lexer.ts
+```
+
+or your favorite way to run typescript.
+
+## Result
+
+```js
+[
+  { tokenType: 'LBrace', innerString: '{', startPos: 0, endPos: 1 },
+  {
+    tokenType: 'String',
+    innerString: '"hello"',
+    startPos: 6,
+    endPos: 13
+  },
+  { tokenType: 'Colon', innerString: ':', startPos: 13, endPos: 14 },
+  {
+    tokenType: 'String',
+    innerString: '"world"',
+    startPos: 15,
+    endPos: 22
+  },
+  { tokenType: 'Comma', innerString: ',', startPos: 22, endPos: 23 },
+  {
+    tokenType: 'String',
+    innerString: '"number"',
+    startPos: 28,
+    endPos: 36
+  },
+  { tokenType: 'Colon', innerString: ':', startPos: 36, endPos: 37 },
+  { tokenType: 'Number', innerString: '123', startPos: 38, endPos: 41 },
+  { tokenType: 'Comma', innerString: ',', startPos: 41, endPos: 42 },
+  {
+    tokenType: 'String',
+    innerString: '"array"',
+    startPos: 47,
+    endPos: 54
+  },
+  { tokenType: 'Colon', innerString: ':', startPos: 54, endPos: 55 },
+  { tokenType: 'LBracket', innerString: '[', startPos: 56, endPos: 57 },
+  { tokenType: 'Number', innerString: '1', startPos: 66, endPos: 67 },
+  { tokenType: 'Comma', innerString: ',', startPos: 67, endPos: 68 },
+  { tokenType: 'Number', innerString: '2', startPos: 77, endPos: 78 },
+  { tokenType: 'Comma', innerString: ',', startPos: 78, endPos: 79 },
+  { tokenType: 'Number', innerString: '3', startPos: 88, endPos: 89 },
+  { tokenType: 'RBracket', innerString: ']', startPos: 94, endPos: 95 },
+  { tokenType: 'Comma', innerString: ',', startPos: 95, endPos: 96 },
+  {
+    tokenType: 'String',
+    innerString: '"object"',
+    startPos: 101,
+    endPos: 109
+  },
+  { tokenType: 'Colon', innerString: ':', startPos: 109, endPos: 110 },
+  { tokenType: 'LBrace', innerString: '{', startPos: 111, endPos: 112 },
+  {
+    tokenType: 'String',
+    innerString: '"hello"',
+    startPos: 121,
+    endPos: 128
+  },
+  { tokenType: 'Colon', innerString: ':', startPos: 128, endPos: 129 },
+  {
+    tokenType: 'String',
+    innerString: '"world"',
+    startPos: 130,
+    endPos: 137
+  },
+  { tokenType: 'RBrace', innerString: '}', startPos: 142, endPos: 143 },
+  { tokenType: 'RBrace', innerString: '}', startPos: 144, endPos: 145 }
+]
+```
+
+boom! Lexer is done! 🎉
+
+We successfully made a lexer for JSON!

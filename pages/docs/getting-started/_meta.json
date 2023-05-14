@@ -1,0 +1,6 @@
+{
+    "before-started": "Before started",
+    "installation": "Installation",
+    "lexer": "Make a lexer",
+    "parser": "Make Parsers"
+}

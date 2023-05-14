@@ -1,0 +1,23 @@
+{
+  "name": "infinite-docs",
+  "version": "1.0.0",
+  "description": "Documentation for infinite-lang (https://github.com/SieR-VR/infinite)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "SieR-VR (nwh040512@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.4.2",
+    "nextra": "^2.5.2",
+    "nextra-theme-docs": "^2.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "typescript": "5.0.4"
+  }
+}

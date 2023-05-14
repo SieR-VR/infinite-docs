@@ -1,0 +1,9 @@
+# node packages
+node_modules
+
+# build result
+.next
+
+# local env files
+.env.local
+compose-dev.yaml

@@ -1,0 +1,43 @@
+import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+
+## Installation
+
+<Steps>
+
+### Step 1
+
+Install the package from your favorite package manager.
+
+<Tabs items={['npm', 'yarn', 'pnpm']} defaultIndex="1">
+    <Tab>
+        ```bash
+        npm install infinite-lang
+        ```
+    </Tab>
+    <Tab>
+        ```bash
+        yarn add infinite-lang
+        ```
+    </Tab>
+    <Tab>
+        ```bash
+        pnpm add infinite-lang
+        ```
+    </Tab>
+</Tabs>
+
+
+### Step 2
+
+And make base `infconfig.json` file in your project root directory.
+
+```json filename="/infconfig.json"
+{
+    "token": "",
+    "parser": {}
+}
+```
+
+</Steps>
+
+That's it! You're ready to go!

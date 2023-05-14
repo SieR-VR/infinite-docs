@@ -1,0 +1,12 @@
+{
+    "hello": "world",
+    "number": 123,
+    "array": [
+        1,
+        2,
+        3
+    ],
+    "object": {
+        "hello": "world"
+    }
+}
