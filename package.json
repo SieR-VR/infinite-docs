@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Documentation for infinite-lang (https://github.com/SieR-VR/infinite)",
   "main": "index.js",
+  "homepage": "https://sier-vr.github.io/infinite-docs/",
   "scripts": {
     "export": "next build && next export"
   },

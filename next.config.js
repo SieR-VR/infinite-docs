@@ -11,6 +11,7 @@ const withNextra = require('nextra')({
 
 module.exports = {
     ...withNextra({}),
+    basePath: '/infinite-docs',
     images: {
         unoptimized: true
     }
