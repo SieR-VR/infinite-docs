@@ -27,10 +27,31 @@ const config: DocsThemeConfig = {
                 {
                     rel: 'icon',
                     type: 'image/svg+xml',
-                    href: '/logo.svg',
+                    href: '/infinite-docs/logo.svg',
                     sizes: "200x200",
                 }
-            ]
+            ],
+            additionalMetaTags: [
+                {
+                    property: 'apple-mobile-web-app-title',
+                    content: 'Infinite',
+                },
+                {
+                    property: 'description',
+                    content: 'Infinite-lang docs',
+                }
+            ],
+            twitter: {
+                cardType: 'summary_large_image',
+                site: '@SieR_VR',
+                handle: '@SieR_VR',
+            },
+            openGraph: {
+                type: 'website',
+                locale: 'en_US',
+                url: 'https://sier-vr.github.io/infinite-docs/docs',
+                description: 'Infinite-lang docs',
+            }
         }
     }
 }
